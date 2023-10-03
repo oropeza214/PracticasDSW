@@ -1,0 +1,71 @@
+        /* Establecemos un tamaño de fuente base para el documento */
+        html {
+            font-size: 16px;
+        }
+
+        /* Definimos una clase común para todos los cuadros */
+        .box {
+            width: 20em;
+            /* Utilizamos em para el ancho */
+            height: 10ex;
+            /* Utilizamos ex para la altura */
+            background-color: lightblue;
+            margin: 2rem;
+            /* Utilizamos rem para el margen */
+            padding: 1rem;
+            /* Utilizamos rem para el relleno */
+            font-size: 1.5rem;
+            /* Utilizamos rem para el tamaño de fuente */
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        /* Estilizamos el texto dentro de los cuadros */
+        .box p {
+            margin: 0;
+        }
+
+        /* Estilizamos el encabezado */
+        h1 {
+            text-align: center;
+        }
+
+        html {
+            font-size: 16px;
+        }
+
+        /* Definimos una clase común para todos los cuadros */
+        .box1 {
+            width: 50vw;
+            /* 50% del ancho del viewport */
+            height: 50vh;
+            /* 50% de la altura del viewport */
+            background-color: lightblue;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .vmin-box {
+            width: 20vmin;
+            /* Toma el valor menor entre vw y vh */
+            height: 20vmin;
+            background-color: lightcoral;
+        }
+
+        .vmax-box {
+            width: 80vmax;
+            /* Toma el valor mayor entre vw y vh */
+            height: 80vmax;
+            background-color: lightgreen;
+        }
+
+        /* Estilizamos el texto dentro de los cuadros */
+        .box1 p {
+            margin: 0;
+            padding: 1rem;
+        }
+
+        /* Estilizamos el encabezado */
+        h1 {
+            text-align: center;
+        }
