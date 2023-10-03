@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulario de Registro</title>
+</head>
+<body>
+    <h1>Formulario de Registro</h1>
+    <form action="" method="get">
+        <table cellpadding="5px">
+            <tr>
+                <td><label for="nombre">Nombre:</label></td>
+                <td><input type="text" name="nombre" id="nombre"></td>
+            </tr>
+            <tr>
+                <td><label for="apellidos">Apellidos:</label></td>
+                <td><input type="text" name="apellidos" id="apellidos"></td>
+            </tr>
+            <tr>
+                <td><label>Sexo:</label></td>
+                <td>
+                    <input type="radio" name="sexo" value="hombre" id="sexo-hombre"><label for="sexo-hombre">Hombre</label>
+                    <input type="radio" name="sexo" value="mujer" id="sexo-mujer"><label for="sexo-mujer">Mujer</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="correo">Correo:</label></td>
+                <td><input type="email" name="correo" id="correo"></td>
+            </tr>
+            <tr>
+                <td><label for="poblacion">Población:</label></td>
+                <td>
+                    <select name="poblacion" id="poblacion">
+                        <option value="">México</option>
+                        <option value="">E.U.A.</option>
+                        <option value="">Canadá</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        <table cellpadding="5px">
+            <tr>
+                <td colspan="2">
+                    <input type="checkbox" name="check1" id="check1">
+                    <label for="check1">Deseo recibir información sobre novedades y ofertas.</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="checkbox" name="check2" id="check2">
+                    <label for="check2">Declaro haber leído y aceptar las condiciones generales del programa y la normativa sobre protección de datos.</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><button>Enviar</button></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
+
+<!-- Brandon Josue Oropeza Quiñonez -->
+<!-- Grupo: 372 -->
