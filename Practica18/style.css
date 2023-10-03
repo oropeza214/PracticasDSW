@@ -1,0 +1,63 @@
+* { /*Selector global, afecta a todo dentro de la pagina*/
+    margin: 0; /*Hace que no haya espacio en blanco alrededor de ningún elemento en la página,*/
+    padding: 0; /*Hace que no haya espacio de relleno dentro de ningún elemento en la página*/
+    box-sizing: border-box; /*Significa que el ancho y la altura de un elemento incluyen el contenido, el relleno y el borde, en lugar de solo el contenido.*/
+    border-radius: 6px; /*Hace que todos mis contenedores tengan las esquinas en forma de un poco circular*/
+}
+
+.header {
+    display: flex; /* Hace que los elementos internos se comporten como elementos flexibles */
+    background-color: rgb(145, 228, 120); /* Establece el color de fondo */
+    height: 220px; /* Fija la altura del encabezado */
+    width: 99%; /* Fija el ancho del encabezado al 99% del contenedor */
+    margin-bottom: 10px; /* Agrega espacio debajo del encabezado */
+    margin: 5px; /* Establece un margen de 5px en todos los lados */
+}
+
+#nav {
+    background-color: rgb(184, 230, 199); /* Establece el color de fondo */
+    height: 80px; /* Fija la altura de la barra de navegación */
+    width: 94%; /* Fija el ancho de la barra de navegación al 94% del contenedor */
+    margin-bottom: 10px; /* Agrega espacio debajo de la barra de navegación */
+    margin-top: 95px; /* Agrega espacio encima de la barra de navegación */
+    margin-left: -30px; /* Desplaza la barra de navegación hacia la izquierda */
+}
+
+.container {
+    display: flex; /* Hace que los elementos internos se comporten como elementos flexibles */
+    margin: 5px; /* Establece un margen de 5px en todos los lados del contenedor principal */
+    margin-bottom: 25px; /* Agrega espacio debajo del contenedor principal */
+}
+
+.aside {
+    background-color: rgb(145, 228, 120); /* Establece el color de fondo */
+    height: 400px; /* Fija la altura de la columna lateral izquierda */
+    width: 49.5%; /* Fija el ancho de la columna lateral izquierda al 49.5% del contenedor */
+    margin-right: 10px; /* Agrega espacio a la derecha de la columna lateral izquierda */
+}
+
+.section {
+    background-color: rgb(145, 228, 120); /* Establece el color de fondo */
+    height: 400px; /* Fija la altura de la sección principal */
+    width: 49.5%; /* Fija el ancho de la sección principal al 49.5% del contenedor */
+}
+
+.article {
+    background-color: rgb(184, 230, 199); /* Establece el color de fondo */
+    height: 30%; /* Fija la altura del artículo al 30% de su contenedor */
+    width: 90%; /* Fija el ancho del artículo al 90% de su contenedor */
+    margin: 20px; /* Establece un margen de 20px en todos los lados del artículo */
+}
+
+.footer {
+    background-color: rgb(145, 228, 120); /* Establece el color de fondo */
+    height: 180px; /* Fija la altura del pie de página */
+    width: 99%; /* Fija el ancho del pie de página al 99% del contenedor */
+    margin-top: 95px; /* Agrega espacio encima del pie de página */
+    margin: 5px; /* Establece un margen de 5px en todos los lados del pie de página */
+}
+
+
+.header, #nav, .aside, .section, .article, .footer{
+    border: 1px solid black;
+} /*Esta codigo me sirve para hacer que todas las clases y id que coloqué tengan un border*/
