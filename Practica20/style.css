@@ -1,0 +1,32 @@
+tr:nth-child(2n){
+    background: rgb(70%, 15%, 18%);
+}
+tr:nth-last-child(2n+1){
+    background: rgb(20%, 35%, 18%);
+}
+section p:nth-child(2n){
+    background: rgb(70%, 95%, 18%);
+}
+td:empty{
+    background: rgb(70%, 95%, 88%);
+}
+ul li{
+    border-bottom: 1px dotted #000;
+    font-size: 50px;
+}
+li:first-child{
+    border-top: 1px dotted #AF0;
+    background-color: #AF0;
+    border-bottom: none;
+    list-style-type: square;
+}
+li:last-child{
+    color: #FF0;
+    list-style-type: square;
+}
+p:nth-of-type(2){
+    background: rgb(125, 178, 125);
+}
+em:nth-last-of-type(2){
+    background: rgb(125, 178, 125);
+}
