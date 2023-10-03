@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.encabezado {
+    background-color: rgb(82, 187, 100);
+    height: 100px;
+    width: 200vh;
+    margin-bottom: 10px;
+}
+
+.menu {
+    background-color: rgb(82, 187, 100);
+    height: 100px;
+    width: 200vh;
+    margin-bottom: 10px;
+}
+
+.contenedor {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#publicidad {
+    background-color: rgb(13, 172, 221);
+    width: 33%;
+    height: 100%;
+    margin: 5px;
+}
+
+#contenido {
+    background-color: yellow;
+    width: 33%;
+    height: 100%;
+    padding: 10px;
+    margin: 5px;
+}
+
+#link {
+    background-color: rgb(13, 172, 221);
+    width: 33%;
+    height: 100%;
+    margin: 5px;
+}
+
+.pie {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    background-color: violet;
+}
