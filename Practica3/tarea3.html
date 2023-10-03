@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 3</title>
+    <!-- <style>
+        *{
+            background-color: aquamarine;
+        }
+    </style> -->
+</head>
+
+<body bgcolor="#C8D1F6">
+    <form align="center">
+        <h1>
+            <font color="#0C3D09">Artículo (publicación)</font>
+        </h1>
+    </form>
+
+    <form align="center">
+        <img
+            src="data:image/jpeg;base64,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">
+    </form>
+
+    <p>
+        <font color="red">Un artículo <strong>es un texto que presenta la postura personal de un periodista, de un
+                analista o de un
+                pensador
+                (incluso de un determinado grupo de autores), respecto a un determinado acontecimiento, problema, asunto
+                actual,
+                de interés general o histórico.</strong> Mediante estos textos se pretende muchas veces influir en la
+            opinión de la
+            gente.</font>
+    </p>
+
+    <p>
+        <font color="orange">En el artículo generalmente se parte del inicio del planteamiento de un problema o situación
+            problemática, o sea,
+            de opiniones encontradas u opuestas. Quien escribe un artículo no solamente analiza los hechos, sino que al
+            interpretarlos y dar su opinión, argumenta a favor o en contra de ellos. Todos estos factores hacen del
+            artículo
+            un texto básicamente argumentativo, ya que expone la opinión del autor.</font>
+    </p>
+
+    <p><em><strong>
+                <font>Por extensión, también se llama articulistas a quienes escriben en revistas científicas o de otro
+                    tipo,
+                    defendiendo sus enfoques o posturas personales.</font>
+            </strong></em></p>
+
+    <p>
+        <font color="#596F0D">Así mismo, las enciclopedias también cuentan con articulistas, que usan sus conocimientos para abarcar
+            todo el
+            significado de una palabra o un concepto como son los artículos enciclopédicos o apartados enciclopédicos de
+            una
+            enciclopedia, siguiendo para ello un determinado estilo enciclopédico. Además también hay diferentes
+            personas
+            que ayudan a que dicho artículo se dé a conocer, como el que lo escribió, en un proceso del que forman parte
+            muchos colaboradores del medio. Hacer un artículo no es fácil.</font>
+    </p><br>
+
+    <h2>
+        <font color="FF00E9">Texto</font>
+    </h2>
+
+    <p>
+        <font color="6F4D0D">Un texto es una composición de signos codificados en un sistema de escritura que forma una unidad de
+            sentido.</font>
+    </p>
+
+    <p>
+        <font color="#007A61">También es una composición de caracteres imprimibles (con grafema) generados por un algoritmo de cifrado
+            que,
+            aunque no tienen sentido para cualquier persona, sí puede ser descifrado por su destinatario original. En
+            otras
+            palabras, un texto es un entramado de signos con una intención comunicativa que adquiere sentido en
+            determinado
+            contexto.</font>
+    </p>
+
+    <form align="center">
+        <img src="https://definicion.de/wp-content/uploads/2010/03/texto-2.jpg" width="500px" height="350px">
+    </form>
+
+    <p>
+        <font color="8C1481">Las ideas que comunica un texto están contenidas en lo que se suele denominar «macroproposiciones»,
+            unidades
+            estructurales de nivel superior o global, que otorgan coherencia al texto constituyendo su hilo central, el
+            esqueleto estructural que cohesiona elementos lingüísticos formales de alto nivel, como los títulos y
+            subtítulos, la secuencia de párrafos, etc. En contraste, las «microproposiciones» son los elementos
+            coadyuvantes
+            de la cohesión de un texto, pero a nivel más particular o local. Esta distinción fue realizada por Teun van
+            Dijk
+            en 1980.</font>
+    </p>
+
+    <p>
+        <font color="AB5E65">El nivel microestructural o local está asociado con el concepto de cohesión. Se refiere a uno de los
+            fenómenos
+            propios de la coherencia, el de las relaciones particulares y locales que se dan entre elementos
+            lingüísticos,
+            tanto los que remiten unos a otros como los que tienen la función de conectar y organizar.</font>
+    </p>
+
+    <p>
+        <font>También es un conjunto de oraciones agrupadas en párrafos que habla de un tema determinado.</font>
+    </p>
+
+    <span>
+        <h3>
+            <font color="5EABA7">Links de referencias: </font>
+        </h3>
+        <ul>
+            <li><a href="https://es.wikipedia.org/wiki/Art%C3%ADculo_(publicaci%C3%B3n)">Artículo #1</a></li>
+            <li><a href="https://es.wikipedia.org/wiki/Art%C3%ADculo_(publicaci%C3%B3n)">Artículo #2</a></li>
+            <li><a href="https://es.wikipedia.org/wiki/Art%C3%ADculo_(publicaci%C3%B3n)">Artículo #3</a></li>
+            <li><a href="https://es.wikipedia.org/wiki/Texto">Texto #1</a></li>
+            <li><a href="https://es.wikipedia.org/wiki/Texto">Texto #2</a></li>
+            <li><a href="https://es.wikipedia.org/wiki/Texto">Texto #3</a></li>
+        </ul>
+    </span>
+
+
+    <h1>
+        <font color="7000FF">Tim Berners-Lee</font>
+    </h1>
+
+    <p>
+        <font color="6EAB5E">Sir Timothy "Tim" John Berners-Lee (Londres, Reino Unido, 8 de junio de 1955) es un científico de la
+            computación
+            británico, conocido por ser el padre de la Web. Estableció la primera comunicación entre un cliente y un
+            servidor usando el protocolo HTTP en noviembre de 1989. En octubre de 1994 fundó el Consorcio de la World
+            Wide
+            Web (W3C) con sede en el MIT, para supervisar y estandarizar el desarrollo de las tecnologías sobre las que
+            se
+            fundamenta la Web y que permiten el funcionamiento de Internet.</font>
+    </p>
+
+    <h2>
+        <font color="00FFFB">Biografía</font>
+    </h2>
+
+    <p>
+        <font color="D8E727">Nació en el sudoeste de Londres en 1955. Sus padres eran matemáticos y formaron parte del equipo que
+            construyó el
+            Manchester Mark I (una de las primeras computadoras). Durante el tiempo que estuvo en la universidad,
+            construyó
+            una computadora con una soldadora, circuitos TTL, un procesador Motorola 68000 y un televisor viejo. Se
+            graduó
+            en física en 1976 en el Queen's College de la Universidad de Oxford. Conoció a su primera esposa en este
+            periodo. En 1978, trabajó en D.G. Nash Limited (también en Poole) escribió un sistema operativo.</font>
+    </p>
+
+    <h3>
+        <font color="00FF24">Desarrollo de su carrera</font>
+    </h3>
+
+    <p>
+        <font color="0A2163">Berners-Lee trabajó en el CERN desde junio hasta diciembre de 1980. Durante ese tiempo, propuso un
+            proyecto
+            basado en el hipertexto para facilitar la forma de compartir y la puesta al día de la información entre
+            investigadores. En este periodo también construyó un programa llamado Enquire que no llegó a ver la luz.
+        </font>
+    </p>
+
+    <p><em><strong>
+                <font color="7E8C80">Después de dejar el CERN, en 1980, se fue a trabajar a la empresa de John Poole Image Computer
+                    Systems Ltd., pero regresó al CERN otra vez en 1984.</font>
+            </strong></em></p>
+
+    <p>
+        <font color="947DC5">En 1989, el CERN era el nodo de Internet más grande de Europa y Berners-Lee vio la oportunidad de unir
+            Internet y
+            el hipertexto (HTTP y HTML), de lo que surgiría la World Wide Web. Desarrolló su primera propuesta de la Web
+            en
+            marzo de 1989, pero no tuvo mucho eco, por lo que en 1990 y con la ayuda de Robert Cailliau, hicieron una
+            revisión que fue aceptada por su gerente, Mike Sendall. Usó ideas similares a las que había usado en el
+            sistema
+            Enquire para crear la World Wide Web, para esto diseñó y construyó el primer navegador (llamado WorldWideWeb
+            y
+            desarrollado con NextStep) y el primer servidor web al que llamó httpd (HyperText Transfer Protocol daemon).
+        </font>
+    </p>
+
+    <form align="center">
+        <h1>Ejemplo de etiqueta video</h1>
+        <video src="example.mp4" loop muted autoplay height="600vh"></video>
+    </form>
+</body>
+
+</html>
+
+<!-- Brandon Josue Oropeza Quiñonez -->
+<!-- Grupo: 372 -->
