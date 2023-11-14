@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link rel="stylesheet" href="one_piece.css"> 
+    <title>One Piece</title> 
+</head>
+
+<body>
+    <header>ONE PIECE</header>
+    <h1>¿Qué personaje de One Piece es?</h1>
+
+    <!-- Pantalla inicial -->
+    <div id="pantalla-inicial"> <!-- Sección que representa la pantalla inicial del juego -->
+        <p>¿Qué tanto sabes de One Piece?</p> <!-- Texto de instrucción para el jugador -->
+        <button class="btn" onclick="comenzarJuego()">JUGAR</button><br> <!-- Botón que inicia el juego, llamando a la función 'comenzarJuego' cuando se hace clic en él -->
+        <button class="btn" onclick="location.href='7maravillas.html';">JUGAR MODO DE LAS 7 MARAVILLAS</button>
+    </div>
+
+    <!-- Pantalla juego -->
+    <div class="pantalla-juego" id="pantalla-juego"> <!-- Sección que contiene la interfaz principal del juego; probablemente esté oculta inicialmente hasta que el jugador comience el juego -->
+        <img src="img_op/brook.svg" alt="" id="imgOnePiece"> <!-- Muestra la imagen de la pregunta actual; 'alt' debería contener una descripción de la imagen para accesibilidad, pero está vacío aquí -->
+        <div class="opciones"> <!-- Contenedor para las opciones de respuesta -->
+            <!-- Las siguientes divisiones representan las opciones individuales de respuestas. Cuando se hace clic en ellas, llaman a la función 'comprobarRespuesta' con un índice específico. -->
+            <div class="opcion" id="op0" onclick="comprobarRespuesta(0)"> 
+                <div class="letra" id="l0">A</div> <!-- Identificador de la opción (A) -->
+                <div class="nombre" id="n0">OPCION A</div> <!-- Texto de la opción, que se actualizará dinámicamente cuando se cargue una nueva pregunta -->
+            </div>
+            <div class="opcion" id="op1" onclick="comprobarRespuesta(1)">
+                <div class="letra" id="l1">B</div> <!-- Identificador de la opción (B) -->
+                <div class="nombre" id="n1">OPCION B</div> <!-- Texto de la opción -->
+            </div>
+            <div class="opcion" id="op2" onclick="comprobarRespuesta(2)">
+                <div class="letra" id="l2">C</div> <!-- Identificador de la opción (C) -->
+                <div class="nombre" id="n2">OPCION C</div> <!-- Texto de la opción -->
+            </div>
+            <div class="opcion" id="op3" onclick="comprobarRespuesta(3)">
+                <div class="letra" id="l3">C</div> <!-- Identificador de la opción (C) -->
+                <div class="nombre" id="n3">OPCION D</div> <!-- Texto de la opción -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Pantalla final -->
+    <div id="pantalla-final"> <!-- Sección que muestra los resultados al final del juego; probablemente esté oculta durante el juego -->
+        <h2>CORRECTAS: <span id="numCorrectas">3</span></h2> <!-- Muestra el número de respuestas correctas; el valor '3' es estático aquí, pero se actualizará dinámicamente en el juego real -->
+        <h2>INCORRECTAS: <span id="numIncorrectas">2</span></h2> <!-- Muestra el número de respuestas incorrectas; el valor '2' es estático aquí, pero se actualizará dinámicamente en el juego real -->
+        <button class="btn" onclick="volverAlInicio()">VOLVER AL INICIO</button> <!-- Botón que reinicia el juego, llamando a la función 'volverAlInicio' cuando se hace clic en él -->
+    </div>
+
+    <footer>ONE PIECE</footer> <!-- Pie de página de la página web/juego -->
+    
+    <script src="one_piece.js"></script> <!-- Vincula el archivo JavaScript que contiene la lógica del juego -->
+</body>
+</html>
