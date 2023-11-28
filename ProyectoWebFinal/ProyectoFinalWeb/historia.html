@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia</title>
+    <link rel="stylesheet" href="style_historia.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a class="logo" href="#">Colombia<span>.</span></a>
+            <ul class="menu-links">
+                <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="historia.html">Historia del lugar</a></li>
+                <li><a href="lugares.html">Lugares Turísticos</a></li>
+                <li><a href="comida.html">Comida Típica</a></li>
+                <li><a href="contactos.html">Contactos</a></li>
+                <li><a href="formulario.php">Formulario</a></li>
+                <li><a href="extras.html">Extras</a></li>
+                <li><a href="login.php">Login</a></li>
+            </ul>
+            <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1 class="titulo">Historia de Colombia</h1>
+        <div class="historia">
+            <!-- Aquí puedes agregar tu contenido sobre la historia de Colombia -->
+            <p>La historia de Colombia es un relato fascinante que abarca miles de años y está marcado por una rica
+                diversidad cultural, eventos históricos significativos y
+                la lucha constante por la independencia y la igualdad.</p><br>
+
+            <p>Desde los tiempos precolombinos hasta la época contemporánea, Colombia ha experimentado una serie de
+                transformaciones que han moldeado su identidad y su paisaje.</p><br>
+
+            <h2>Época Precolombina</h2>
+
+            <p>Colombia estuvo habitada por diversas culturas indígenas antes de la llegada de los europeos. Entre las
+                civilizaciones más destacadas se encuentran los
+                muiscas en la región andina, los tayronas en la Sierra Nevada de Santa Marta y los quimbayas en la zona
+                de los actuales departamentos de Caldas y Quindío.
+                Estas culturas dejaron un legado impresionante de arte, arquitectura y conocimientos.</p><br>
+
+            <h2>Colonización Española</h2><br>
+
+            <p>En 1499, el explorador español Alonso de Ojeda llegó a la costa caribeña de lo que hoy es Colombia. A
+                partir de entonces, Colombia fue parte del virreinato del Perú y más tarde del virreinato de la Nueva
+                Granada. Durante la colonia, se desarrolló una compleja sociedad que incluía a españoles, indígenas y
+                africanos, dando lugar a una mezcla cultural única.</p><br>
+
+            <h2>Independencia</h2>
+
+            <p>El 20 de julio de 1810, Colombia dio los primeros pasos hacia la independencia de España con el Grito de
+                Independencia en Bogotá. Sin embargo, la lucha por la independencia se prolongó durante más de una
+                década y finalmente culminó con la batalla de Boyacá el 7 de agosto de 1819. Colombia se unió a
+                Venezuela y Ecuador en la Gran Colombia bajo el liderazgo de Simón Bolívar, pero la unión fue efímera y
+                Colombia se convirtió en una república independiente en 1831.</p><br>
+
+            <h2>Siglo XX</h2>
+
+            <p>Colombia experimentó desafíos políticos y sociales a lo largo del siglo XX, incluyendo conflictos
+                armados, movimientos guerrilleros y el narcotráfico. Sin embargo, el país también vivió periodos de
+                estabilidad y desarrollo económico. Hoy en día, Colombia es conocida por su diversidad geográfica, su
+                patrimonio cultural y su compromiso con la paz y la reconciliación.</p><br>
+
+            <p>La historia de Colombia es una narrativa en constante evolución que abarca desde las civilizaciones
+                indígenas hasta los desafíos y logros modernos. Al explorar esta historia, los visitantes pueden
+                comprender mejor la riqueza cultural y la identidad de este hermoso país sudamericano.</p>
+
+
+        </div>
+    </div>
+
+    <script>
+        const header = document.querySelector("header");
+        const hamburgerBtn = document.querySelector("#hamburger-btn");
+        const closeMenuBtn = document.querySelector("#close-menu-btn");
+
+        // Toggle mobile menu on hamburger button click
+        hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
+
+        // Close mobile menu on close button click
+        closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+    </script>
+</body>
+
+</html>

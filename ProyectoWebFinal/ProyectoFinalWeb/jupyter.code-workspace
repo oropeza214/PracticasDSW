@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "C:/Users/Mantenimiento/Desktop/entorno/jupyter"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "C:/xampp/htdocs/dashboard/ProyectoMenu"
+		},
+		{
+			"path": "../Practicas/Practica38"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "ProyectoFinalWeb"
+	}
+}
